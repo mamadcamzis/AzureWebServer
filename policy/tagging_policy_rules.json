@@ -1,0 +1,13 @@
+{
+  "if":{
+    "allof":[
+      {
+        "field":"[concat('tags[', parameters('tagName'), ']')]",
+        "notEquals": "[parameters('tagValue')]"
+      }
+    ]
+  },
+  "then":{
+    "effect":"deny"
+  }
+}
