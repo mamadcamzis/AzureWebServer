@@ -3,7 +3,7 @@
     "allof":[
       {
         "field":"[concat('tags[', parameters('tagName'), ']')]",
-        "notEquals": "[parameters('tagValue')]"
+        "exists": "false"
       }
     ]
   },
