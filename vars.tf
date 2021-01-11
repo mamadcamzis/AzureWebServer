@@ -3,7 +3,13 @@ variable "prefix" {
   default = "udacity-project"
 }
 
-variable "environment"{
+variable "packer_resource_group" {
+  description = "Name of the resource group where the packer image is"
+  default     =  "udacity-project-rg"
+  }
+
+
+variable "environement" {
   description = "The environment should be used for all resources in this example"
   default = "Deploy a web server in azure"
 }
@@ -23,13 +29,9 @@ variable "password"{
 
 variable "server_names"{
   type = list
-  default = ["prod", "dev"]
-}
-
-variable "packerImageId"{
-  default = "/subscriptions/48a186d8-489b-4363-84ba-e5bf2cd35635/resourceGroups/udacity-project-rg/providers/Microsoft.Compute/images/PackerImage"
+  default = ["production", "development", "test"]
 }
 
 variable "vm_count"{
-  default = "2"
+  default = "3"
 }
