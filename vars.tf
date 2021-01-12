@@ -20,18 +20,18 @@ variable "location" {
   }
 
 variable "username"{
-  default = "username"
+  default = "adminuser"
 }
 
 variable "password"{
-  default= "password"
+  default= "P@ssw0rd1234!"
 }
 
 variable "server_names"{
   type = list
-  default = ["production", "development", "test"]
+  default = ["production", "development"]
 }
 
 variable "vm_count"{
-  default = "3"
+  default = "2"
 }
