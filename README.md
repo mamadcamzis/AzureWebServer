@@ -43,18 +43,18 @@ export ARM_SUBSCRIPTION_ID=59ce2236-a13-fakesubsribtionid
     - Copy the Subscription Id
   - CLIENT ID
 
-   - Login into your azure account
-   - Search and click "Azure Active Directory"
-   - Click "App registrations" under the Manage tab
-   - Click the application that you own
-   - Copy the client ID
+     - Login into your azure account
+     - Search and click "Azure Active Directory"
+     - Click "App registrations" under the Manage tab
+     - Click the application that you own
+     - Copy the client ID
   - CLIENT SECRET
-   - Login into your azure account
-   - Search and click "Azure Active Directory"
-   - Click "App registrations" under the Manage tab
-   - Click the application that you own
-   - Click the "Certificates & Secrets" under the Manage tab
-   - Create a client secret as you need.
+     - Login into your azure account
+     - Search and click "Azure Active Directory"
+     - Click "App registrations" under the Manage tab
+     - Click the application that you own
+     - Click the "Certificates & Secrets" under the Manage tab
+     - Create a client secret as you need.
 After these process type printenv to check tou have configured properly
 - Deploy packer images
 Type the following command to build the server with packer template
