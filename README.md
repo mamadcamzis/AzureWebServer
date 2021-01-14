@@ -63,7 +63,7 @@ Type the following command to build the server with packer template
 
 ### Create azure resources with terraform template
 Terraform is an open-source infrastructure as code software tool created by HashiCorp.
-Users define resources to using a declarative language that is similar to json.
+Users define resources using a declarative language that is similar to json.
 
 - Specify variables
 To let our code DRY we can use variables file
@@ -76,7 +76,7 @@ variable "environement" {
 }
 ```
 and we can get value of environement variable in the main.tf file as shown
-` var.environment`
+` var.environement`
 - Deploy with terraform
 We need to supply tenant_id in the provider block like:
 ```
